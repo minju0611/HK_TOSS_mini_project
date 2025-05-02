@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+data/reviews_final.csv
+data/store_info.json
+vectordb/chroma_reviews/
