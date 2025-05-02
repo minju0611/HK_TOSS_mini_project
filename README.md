@@ -11,12 +11,11 @@ LangChain의 Function Calling 기능과 RAG(Retrieval-Augmented Generation)를 �
 
 ## 📁 프로젝트 구조
 
+``` 
 HK_TOSS_MINI_PROJECT/ ├── chatbot/ # 챗봇 응답 로직, Function Calling 정의 │ ├── app.py # Gradio UI 및 실행 진입점 │ ├── main_chain.py # 메모리 + RAG 결합 응답 처리 │ ├── tools.py # Function Calling 툴 함수 및 schema 정의 │ ├── crawler/
 │ └── kakao_crawling.py # 카카오맵 기반 크롤링 코드 (선택 실행) │ ├── data/ # 크롤링 또는 전처리 후 저장된 파일 │ ├── stores.csv │ ├── menus.csv │ ├── reviews.csv │ ├── reviews_final.csv # 전처리된 리뷰 │ └── store_info.json # 가게 정보 + 메뉴 통합 JSON │ ├── preprocessing/
 │ ├── reviews_to_clean.py # 리뷰 전처리 모듈 │ └── stores_menus_to_json.py # JSON 변환 모듈 │ ├── vectordb/ │ ├── embed_reviews.py # 리뷰 임베딩 및 Chroma DB 생성 │ ├── load_retriever.py # retriever 로딩 함수 │ └── chroma_reviews/ # ChromaDB 실제 저장 디렉토리 │ ├── config.py # 경로 설정 모듈 ├── run_pipeline.py # 전체 파이프라인 실행 스크립트 ├── requirements.txt # 의존성 명시 ├── .env # 환경변수 파일 (API 키 등) └── README.md
-
-yaml
-코드 복사
+```
 
 ---
 
