@@ -75,6 +75,7 @@ HK_TOSS_mini_project/
 ├── requirements.txt
 └── .env                         # (gitignore 대상) OpenAI API Key 포함
 
+```
 ---
 
 ## 전체 실행 흐름
