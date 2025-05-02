@@ -43,7 +43,7 @@ python run_pipeline.py
 ---
 
 ## 폴더 구조
-```
+
 HK_TOSS_mini_project/
 │
 ├── chatbot/                     # 챗봇 UI 및 체인 로직
