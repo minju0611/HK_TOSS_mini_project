@@ -14,13 +14,6 @@
 
 ---
 
-🔐 주의사항
-- .env, reviews_final.csv, store_info.json, chroma_reviews/는 .gitignore에 포함되어 있습니다.
-
-- 로컬에서 .env 파일과 raw CSV 파일만 있으면 전체 파이프라인을 실행할 수 있습니다.
-
----
-
 ## 설치 및 실행 방법
 
 ```bash
@@ -39,11 +32,16 @@ OPENAI_API_KEY="sk-..."
 
 # 4. 전체 파이프라인 실행 (크롤링 제외)
 python run_pipeline.py
+```
+🔐 주의사항
+- .env, reviews_final.csv, store_info.json, chroma_reviews/는 .gitignore에 포함되어 있습니다.
 
+- 로컬에서 .env 파일과 raw CSV 파일만 있으면 전체 파이프라인을 실행할 수 있습니다.
 ---
 
 ## 폴더 구조
 
+```
 HK_TOSS_mini_project/
 │
 ├── chatbot/                     # 챗봇 UI 및 체인 로직
