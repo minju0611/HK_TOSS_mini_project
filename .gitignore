@@ -4,3 +4,4 @@ __pycache__/
 data/reviews_final.csv
 data/store_info.json
 vectordb/chroma_reviews/
+kakao_crawling.py
