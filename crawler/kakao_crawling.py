@@ -542,7 +542,7 @@ def main():
     print("🍽️ 카카오맵 데이터 수집 시스템을 시작합니다")
     
     # 설정값
-    REST_API_KEY = "668977541fc5a5fd5c0d271902df39c5"  # 카카오 API 키
+    REST_API_KEY = ""  # 카카오 API 키
     max_store_count = 50  # 최대 크롤링할 가게 수
     
     # 검색 키워드 입력 받기
