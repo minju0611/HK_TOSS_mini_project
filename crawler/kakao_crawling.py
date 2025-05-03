@@ -9,6 +9,14 @@ from sentence_transformers import SentenceTransformer
 import numpy as np
 import re
 
+from dotenv import load_dotenv
+load_dotenv()  # .env 파일에 있는 환경변수들을 시스템 환경변수로 로드
+
+# .env 로드
+load_dotenv()
+if not os.getenv("OPENAI_API_KEY"):
+    raise EnvironmentError("OPENAI_API_KEY가 설정되어 있지 않습니다. .env 파일을 확인하세요.")
+
 def search_places(keyword, rest_api_key, radius=1000, max_pages=4):
     """카카오 로컬 API를 사용하여 장소를 검색합니다."""
     headers = {"Authorization": f"KakaoAK {rest_api_key}"}
